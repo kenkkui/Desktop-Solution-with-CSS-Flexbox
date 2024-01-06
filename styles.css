@@ -1,0 +1,79 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --black : hsl(0, 0%, 7%);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Figtree';
+}
+
+#card {
+  background-color: #ffffff;
+  border: 2px solid hsl(0, 0%, 7%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 15px 15px hsl(0, 0%, 7%);
+}
+
+#card > svg {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.learning {
+  font-weight: 700;
+  background-color: var(--yellow);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.text-wrapper > p {
+  margin-bottom: 20px;
+  line-height: 140%;
+}
+
+.text-wrapper > h2 {
+  cursor: pointer;
+  margin: 14px 0px;
+}
+
+.text-wrapper > h2:hover {
+  color: var(--yellow);
+}
+
+
+.attribution {
+  align-self: center;
+  margin: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.author-pfp {
+  height: 30px;
+}
+
